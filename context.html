@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="styles/studyspot.css">
+</head>
+<body class="m-0 p-0 overflow-x-hidden" style="background: linear-gradient(180deg, #bfb9b3 0%, #d2cdc7 100%);">
+  <!-- Status Bar -->
+  <div class="status-bar text-gray-700">
+    <span>11:30</span>
+    <div class="flex items-center gap-1">
+      <i class="fas fa-signal text-xs"></i>
+      <i class="fas fa-wifi text-xs"></i>
+      <i class="fas fa-battery-full text-xs"></i>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <div class="px-5 pt-2 pb-4">
+    <div class="flex items-center gap-3">
+      <i class="fas fa-arrow-left text-gray-500"></i>
+      <div class="flex-1">
+        <h1 class="text-lg font-bold text-gray-800">选择学习模式</h1>
+        <p class="text-xs text-gray-500">让我们找到最适合你的环境</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mode Cards -->
+  <div class="px-5 mb-4 space-y-3">
+    <!-- Deep Focus -->
+    <div class="bg-gradient-to-br from-blue-500/20 to-blue-600/30 backdrop-blur-xl rounded-2xl p-4 border-2 border-blue-400/50">
+      <div class="flex items-start gap-3">
+        <div class="w-12 h-12 bg-blue-500/30 rounded-xl flex items-center justify-center">
+          <i class="fas fa-brain text-blue-600 text-xl"></i>
+        </div>
+        <div class="flex-1">
+          <p class="text-gray-800 font-semibold">深度思考</p>
+          <p class="text-gray-500 text-xs mt-1">极度安静，适合论文、阅读、编程</p>
+        </div>
+        <i class="fas fa-check-circle text-blue-500"></i>
+      </div>
+    </div>
+
+    <!-- Inspiration -->
+    <div class="bg-white/40 backdrop-blur-xl rounded-2xl p-4">
+      <div class="flex items-start gap-3">
+        <div class="w-12 h-12 bg-amber-100 rounded-xl flex items-center justify-center">
+          <i class="fas fa-lightbulb text-amber-500 text-xl"></i>
+        </div>
+        <div class="flex-1">
+          <p class="text-gray-800 font-semibold">灵感激发</p>
+          <p class="text-gray-500 text-xs mt-1">轻度背景音，适合创意、设计、头脑风暴</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Collaboration -->
+    <div class="bg-white/40 backdrop-blur-xl rounded-2xl p-4">
+      <div class="flex items-start gap-3">
+        <div class="w-12 h-12 bg-green-100 rounded-xl flex items-center justify-center">
+          <i class="fas fa-users text-green-500 text-xl"></i>
+        </div>
+        <div class="flex-1">
+          <p class="text-gray-800 font-semibold">小组协作</p>
+          <p class="text-gray-500 text-xs mt-1">可讨论空间，适合小组项目、学习交流</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Environment Settings -->
+  <div class="px-5 mb-4">
+    <div class="bg-white/50 backdrop-blur-xl rounded-2xl p-4">
+      <p class="text-gray-700 font-semibold text-sm mb-4">环境参数</p>
+      
+      <!-- Noise Slider -->
+      <div class="mb-4">
+        <div class="flex justify-between items-center mb-2">
+          <span class="text-xs text-gray-500">噪音容忍度</span>
+          <span class="text-xs text-amber-600 font-medium">≤35dB</span>
+        </div>
+        <div class="h-2 bg-gray-200 rounded-full relative">
+          <div class="h-2 bg-gradient-to-r from-green-400 to-amber-400 rounded-full w-1/3"></div>
+          <div class="w-4 h-4 bg-white rounded-full shadow absolute top-1/2 -translate-y-1/2 border-2 border-amber-400" style="left: 30%"></div>
+        </div>
+      </div>
+
+      <!-- Duration -->
+      <div class="mb-4">
+        <div class="flex justify-between items-center mb-2">
+          <span class="text-xs text-gray-500">预计学习时长</span>
+        </div>
+        <div class="flex gap-2">
+          <span class="bg-gray-100 text-gray-500 text-xs px-4 py-2 rounded-full">1h</span>
+          <span class="bg-amber-500 text-white text-xs px-4 py-2 rounded-full">2h</span>
+          <span class="bg-gray-100 text-gray-500 text-xs px-4 py-2 rounded-full">3h</span>
+          <span class="bg-gray-100 text-gray-500 text-xs px-4 py-2 rounded-full">4h+</span>
+        </div>
+      </div>
+
+      <!-- Special Needs -->
+      <div>
+        <span class="text-xs text-gray-500">特殊需求</span>
+        <div class="flex flex-wrap gap-2 mt-2">
+          <span class="bg-amber-100 text-amber-700 text-xs px-3 py-1.5 rounded-full flex items-center gap-1">
+            <i class="fas fa-check text-xs"></i>必须靠窗
+          </span>
+          <span class="bg-gray-100 text-gray-500 text-xs px-3 py-1.5 rounded-full">大桌面</span>
+          <span class="bg-gray-100 text-gray-500 text-xs px-3 py-1.5 rounded-full">独立隔间</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Task Input -->
+  <div class="px-5 mb-4">
+    <div class="bg-white/40 backdrop-blur-xl rounded-2xl p-4">
+      <p class="text-gray-700 font-semibold text-sm mb-3">今日学习任务</p>
+      <div class="bg-white/60 rounded-xl p-3 flex items-center gap-2">
+        <i class="fas fa-book text-amber-500"></i>
+        <span class="text-sm text-gray-600">复习微观经济学第三章</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Action Button -->
+  <div class="px-5 pb-8">
+    <button class="w-full bg-gradient-to-r from-amber-500 to-amber-600 text-white font-semibold py-4 rounded-2xl flex items-center justify-center gap-2 shadow-lg">
+      <i class="fas fa-compass"></i>
+      <span>开始寻找</span>
+    </button>
+    <p class="text-center text-xs text-gray-400 mt-3">
+      <i class="fas fa-bookmark text-amber-400"></i> 保存为偏好
+    </p>
+  </div>
+</body>
+</html>
+

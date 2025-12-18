@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="styles/studyspot.css">
+</head>
+<body class="m-0 p-0 overflow-x-hidden" style="background: linear-gradient(180deg, #b8b3ad 0%, #c9c4be 100%);">
+  <!-- Status Bar -->
+  <div class="status-bar text-gray-700">
+    <span>11:30</span>
+    <div class="flex items-center gap-1">
+      <i class="fas fa-signal text-xs"></i>
+      <i class="fas fa-wifi text-xs"></i>
+      <i class="fas fa-battery-full text-xs"></i>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <div class="px-5 pt-2 pb-2">
+    <div class="flex items-center justify-between">
+      <div class="flex items-center gap-2">
+        <i class="fas fa-book-open text-amber-600"></i>
+        <span class="font-semibold text-gray-700">StudySpot</span>
+      </div>
+      <i class="fas fa-bell text-gray-400"></i>
+    </div>
+  </div>
+
+  <!-- Main Title -->
+  <div class="px-5 pt-4 pb-5 text-center">
+    <h1 class="text-2xl font-bold text-gray-800">今天想怎么学？</h1>
+  </div>
+
+  <!-- Select Learning Mode Card -->
+  <div class="px-5 mb-5">
+    <div class="bg-gradient-to-br from-amber-500/20 to-amber-400/10 backdrop-blur-xl rounded-3xl p-5 border border-amber-300/40">
+      <div class="flex items-center justify-between mb-4">
+        <p class="text-gray-800 font-bold text-lg">选择学习模式</p>
+        <i class="fas fa-chevron-right text-amber-500"></i>
+      </div>
+      <div class="flex justify-between">
+        <div class="text-center flex-1">
+          <div class="w-12 h-12 mx-auto bg-blue-500/20 rounded-xl flex items-center justify-center mb-2">
+            <span class="text-xl">🔇</span>
+          </div>
+          <p class="text-xs text-gray-600">专注</p>
+        </div>
+        <div class="text-center flex-1">
+          <div class="w-12 h-12 mx-auto bg-amber-100 rounded-xl flex items-center justify-center mb-2">
+            <span class="text-xl">💡</span>
+          </div>
+          <p class="text-xs text-gray-600">灵感</p>
+        </div>
+        <div class="text-center flex-1">
+          <div class="w-12 h-12 mx-auto bg-green-100 rounded-xl flex items-center justify-center mb-2">
+            <span class="text-xl">👥</span>
+          </div>
+          <p class="text-xs text-gray-600">协作</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Smart Recommendation Section -->
+  <div class="px-5 pb-24">
+    <p class="text-gray-600 text-xs mb-3 font-medium">📍 为你推荐</p>
+    
+    <!-- Recommendation Card 1 - Best Match -->
+    <div class="bg-white/60 backdrop-blur-xl rounded-2xl p-4 mb-3">
+      <div class="flex items-center gap-3">
+        <img src="https://images.unsplash.com/photo-1521017432531-fbd92d768814?w=100&q=80" class="w-16 h-16 rounded-xl object-cover">
+        <div class="flex-1">
+          <div class="flex items-center gap-2">
+            <p class="text-gray-800 font-semibold">清风书咖</p>
+            <span class="bg-amber-100 text-amber-600 text-xs px-2 py-0.5 rounded">最佳</span>
+          </div>
+          <p class="text-gray-400 text-xs mt-1">步行8分钟 · 35dB 安静</p>
+          <div class="flex gap-1 mt-1">
+            <span class="bg-green-100 text-green-600 text-xs px-2 py-0.5 rounded">插座</span>
+            <span class="bg-blue-100 text-blue-600 text-xs px-2 py-0.5 rounded">WiFi</span>
+          </div>
+        </div>
+        <div class="text-center">
+          <p class="text-amber-600 font-bold text-xl">92%</p>
+          <p class="text-gray-400 text-xs">匹配</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Recommendation Card 2 -->
+    <div class="bg-white/50 backdrop-blur-xl rounded-2xl p-4 mb-3">
+      <div class="flex items-center gap-3">
+        <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=100&q=80" class="w-14 h-14 rounded-xl object-cover">
+        <div class="flex-1">
+          <p class="text-gray-800 font-semibold text-sm">静读空间</p>
+          <p class="text-gray-400 text-xs mt-1">步行5分钟 · 28dB 极静</p>
+        </div>
+        <div class="text-center">
+          <p class="text-amber-500 font-bold text-lg">88%</p>
+          <p class="text-gray-400 text-xs">匹配</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Recommendation Card 3 -->
+    <div class="bg-white/40 backdrop-blur-xl rounded-2xl p-3 flex items-center gap-3">
+      <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=80&q=80" class="w-12 h-12 rounded-lg object-cover">
+      <div class="flex-1">
+        <p class="text-gray-700 font-medium text-sm">猫咪咖啡馆</p>
+        <p class="text-gray-400 text-xs">步行15分钟 · 42dB</p>
+      </div>
+      <p class="text-gray-500 font-bold">75%</p>
+    </div>
+  </div>
+
+  <!-- Bottom Nav -->
+  <div class="bottom-nav">
+    <div class="text-center">
+      <i class="fas fa-home text-amber-600"></i>
+      <p class="text-xs text-amber-600 mt-1">首页</p>
+    </div>
+    <div class="text-center opacity-50">
+      <i class="fas fa-compass text-gray-600"></i>
+      <p class="text-xs text-gray-600 mt-1">发现</p>
+    </div>
+    <div class="text-center opacity-50">
+      <i class="fas fa-users text-gray-600"></i>
+      <p class="text-xs text-gray-600 mt-1">社区</p>
+    </div>
+    <div class="text-center opacity-50">
+      <i class="fas fa-user text-gray-600"></i>
+      <p class="text-xs text-gray-600 mt-1">我的</p>
+    </div>
+  </div>
+</body>
+</html>
