@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="styles/studyspot.css">
+</head>
+<body class="m-0 p-0 overflow-hidden" style="background: linear-gradient(180deg, #c2bdb7 0%, #d5d0ca 100%); height: 562px;">
+  <!-- Status Bar -->
+  <div class="status-bar text-gray-700">
+    <span>11:30</span>
+    <div class="flex items-center gap-1">
+      <i class="fas fa-signal text-xs"></i>
+      <i class="fas fa-wifi text-xs"></i>
+      <i class="fas fa-battery-full text-xs"></i>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <div class="px-5 pt-2 pb-3">
+    <div class="flex items-center gap-3">
+      <i class="fas fa-arrow-left text-gray-500"></i>
+      <div class="flex-1">
+        <h1 class="text-base font-bold text-gray-800">匹配结果</h1>
+        <p class="text-gray-500 text-xs mt-0.5">深度专注模式 · 找到8个地点</p>
+      </div>
+      <i class="fas fa-sliders text-gray-500"></i>
+    </div>
+  </div>
+
+  <!-- Match Cards List -->
+  <div class="px-5 pb-16 space-y-2">
+    <!-- Card 1 - Best Match -->
+    <div class="bg-white/60 backdrop-blur-xl rounded-xl overflow-hidden">
+      <div class="relative h-20">
+        <img src="https://images.unsplash.com/photo-1521017432531-fbd92d768814?w=400&q=80" class="w-full h-full object-cover">
+        <div class="absolute top-2 right-2 bg-amber-500 text-white text-xs px-2 py-0.5 rounded-full font-semibold">
+          最佳匹配
+        </div>
+        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent p-2">
+          <h3 class="text-white font-bold text-xs whitespace-nowrap">清风书咖 · 校园东门 · 0.6km</h3>
+        </div>
+      </div>
+      <div class="p-2">
+        <div class="flex items-center justify-between mb-1">
+          <div class="flex items-center gap-1">
+            <i class="fas fa-star text-amber-400 text-xs"></i>
+            <span class="text-gray-800 font-bold text-xs">4.7 (128评价)</span>
+          </div>
+          <span class="text-amber-600 font-bold text-sm">92%</span>
+        </div>
+        <div class="flex gap-1 flex-wrap">
+          <span class="bg-green-100 text-green-600 text-xs px-1.5 py-0.5 rounded-full">35dB 安静</span>
+          <span class="bg-blue-100 text-blue-600 text-xs px-1.5 py-0.5 rounded-full">插座充足</span>
+          <span class="bg-purple-100 text-purple-600 text-xs px-1.5 py-0.5 rounded-full">WiFi快</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="bg-white/50 backdrop-blur-xl rounded-xl overflow-hidden">
+      <div class="relative h-16">
+        <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=400&q=80" class="w-full h-full object-cover">
+        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent p-2">
+          <h3 class="text-white font-bold text-xs whitespace-nowrap">静读空间 · 图书馆3楼 · 0.4km</h3>
+        </div>
+      </div>
+      <div class="p-2">
+        <div class="flex items-center justify-between">
+          <div class="flex items-center gap-1">
+            <i class="fas fa-star text-amber-400 text-xs"></i>
+            <span class="text-gray-800 font-semibold text-xs">4.9 (86)</span>
+          </div>
+          <span class="text-amber-600 font-bold text-sm">88%</span>
+        </div>
+        <div class="flex gap-1 mt-1">
+          <span class="bg-green-100 text-green-600 text-xs px-1.5 py-0.5 rounded">28dB</span>
+          <span class="bg-blue-100 text-blue-600 text-xs px-1.5 py-0.5 rounded">插座</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="bg-white/50 backdrop-blur-xl rounded-xl overflow-hidden">
+      <div class="relative h-16">
+        <img src="https://images.unsplash.com/photo-1559925393-8be0ec4767c8?w=400&q=80" class="w-full h-full object-cover">
+        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent p-2">
+          <h3 class="text-white font-bold text-xs whitespace-nowrap">禅意茶室 · 文创园区 · 1.0km</h3>
+        </div>
+      </div>
+      <div class="p-2">
+        <div class="flex items-center justify-between">
+          <div class="flex items-center gap-1">
+            <i class="fas fa-star text-amber-400 text-xs"></i>
+            <span class="text-gray-800 font-semibold text-xs">4.8 (52)</span>
+          </div>
+          <span class="text-amber-600 font-bold text-sm">82%</span>
+        </div>
+        <div class="flex gap-1 mt-1">
+          <span class="bg-green-100 text-green-600 text-xs px-1.5 py-0.5 rounded">32dB</span>
+          <span class="bg-amber-100 text-amber-600 text-xs px-1.5 py-0.5 rounded">靠窗</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="bg-white/40 backdrop-blur-xl rounded-xl overflow-hidden">
+      <div class="relative h-14">
+        <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=400&q=80" class="w-full h-full object-cover">
+        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent p-2">
+          <h3 class="text-white font-bold text-xs whitespace-nowrap">猫咪咖啡馆 · 1.2km</h3>
+        </div>
+      </div>
+      <div class="p-2">
+        <div class="flex items-center justify-between">
+          <div class="flex items-center gap-1">
+            <i class="fas fa-star text-amber-400 text-xs"></i>
+            <span class="text-gray-800 font-semibold text-xs">4.5</span>
+          </div>
+          <span class="text-gray-500 font-bold text-sm">75%</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+

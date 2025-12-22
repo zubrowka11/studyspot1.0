@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="styles/studyspot.css">
+</head>
+<body class="m-0 p-0 overflow-hidden" style="background: linear-gradient(180deg, #b8b3ad 0%, #c9c4be 100%); height: 562px;">
+  <!-- Status Bar -->
+  <div class="status-bar text-gray-700">
+    <span>11:30</span>
+    <div class="flex items-center gap-1">
+      <i class="fas fa-signal text-xs"></i>
+      <i class="fas fa-wifi text-xs"></i>
+      <i class="fas fa-battery-full text-xs"></i>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <div class="px-5 pt-2 pb-2">
+    <div class="flex items-center justify-between">
+      <div class="flex items-center gap-2">
+        <i class="fas fa-book-open text-amber-600"></i>
+        <span class="font-semibold text-gray-700">StudySpot</span>
+      </div>
+      <i class="fas fa-bell text-gray-400"></i>
+    </div>
+  </div>
+
+  <!-- Main Title -->
+  <div class="px-5 pt-2 pb-2 text-center">
+    <h1 class="text-lg font-bold text-gray-800">今天想怎么学？</h1>
+  </div>
+
+  <!-- Select Learning Mode Card -->
+  <div class="px-5 mb-2">
+    <div class="bg-gradient-to-br from-amber-500/20 to-amber-400/10 backdrop-blur-xl rounded-2xl p-3 border border-amber-300/40">
+      <div class="flex items-center justify-between mb-2">
+        <p class="text-gray-800 font-bold text-sm">选择学习模式</p>
+        <i class="fas fa-chevron-right text-amber-500 text-xs"></i>
+      </div>
+      <div class="flex justify-between">
+        <div class="text-center flex-1">
+          <div class="w-8 h-8 mx-auto bg-blue-500/20 rounded-lg flex items-center justify-center mb-1">
+            <span class="text-sm">🔇</span>
+          </div>
+          <p class="text-xs text-gray-600">专注</p>
+        </div>
+        <div class="text-center flex-1">
+          <div class="w-8 h-8 mx-auto bg-amber-100 rounded-lg flex items-center justify-center mb-1">
+            <span class="text-sm">💡</span>
+          </div>
+          <p class="text-xs text-gray-600">灵感</p>
+        </div>
+        <div class="text-center flex-1">
+          <div class="w-8 h-8 mx-auto bg-green-100 rounded-lg flex items-center justify-center mb-1">
+            <span class="text-sm">👥</span>
+          </div>
+          <p class="text-xs text-gray-600">协作</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Smart Recommendation Section -->
+  <div class="px-5 pb-16">
+    <p class="text-gray-600 text-xs mb-2 font-medium">📍 为你推荐</p>
+    
+    <!-- Recommendation Card 1 - Best Match -->
+    <div class="bg-white/60 backdrop-blur-xl rounded-xl p-2 mb-2">
+      <div class="flex items-center gap-2">
+        <img src="https://images.unsplash.com/photo-1521017432531-fbd92d768814?w=100&q=80" class="w-12 h-12 rounded-lg object-cover">
+        <div class="flex-1">
+          <div class="flex items-center gap-1">
+            <p class="text-gray-800 font-semibold text-xs">清风书咖</p>
+            <span class="bg-amber-100 text-amber-600 text-xs px-1.5 py-0.5 rounded">最佳</span>
+          </div>
+          <p class="text-gray-400 text-xs">0.6km · 35dB 安静 · 插座 WiFi</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Recommendation Card 2 -->
+    <div class="bg-white/50 backdrop-blur-xl rounded-xl p-2 mb-2">
+      <div class="flex items-center gap-2">
+        <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=100&q=80" class="w-12 h-12 rounded-lg object-cover">
+        <div class="flex-1">
+          <p class="text-gray-800 font-semibold text-xs">静读空间</p>
+          <p class="text-gray-400 text-xs">0.4km · 28dB 极静</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Recommendation Card 3 -->
+    <div class="bg-white/40 backdrop-blur-xl rounded-xl p-2 flex items-center gap-2">
+      <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=80&q=80" class="w-12 h-12 rounded-lg object-cover">
+      <div class="flex-1">
+        <p class="text-gray-700 font-medium text-xs">猫咪咖啡馆</p>
+        <p class="text-gray-400 text-xs">1.2km · 42dB</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bottom Nav -->
+  <div class="bottom-nav" style="padding: 8px 0 20px;">
+    <div class="text-center">
+      <i class="fas fa-home text-amber-600 text-sm"></i>
+      <p class="text-xs text-amber-600 mt-0.5">首页</p>
+    </div>
+    <div class="text-center opacity-50">
+      <i class="fas fa-compass text-gray-600 text-sm"></i>
+      <p class="text-xs text-gray-600 mt-0.5">发现</p>
+    </div>
+    <div class="text-center opacity-50">
+      <i class="fas fa-users text-gray-600 text-sm"></i>
+      <p class="text-xs text-gray-600 mt-0.5">社区</p>
+    </div>
+    <div class="text-center opacity-50">
+      <i class="fas fa-user text-gray-600 text-sm"></i>
+      <p class="text-xs text-gray-600 mt-0.5">我的</p>
+    </div>
+  </div>
+</body>
+</html>
