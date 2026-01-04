@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="styles/studyspot.css">
+</head>
+<body class="m-0 p-0 overflow-hidden" style="background: linear-gradient(180deg, #c9c4be 0%, #ddd9d4 100%); height: 562px;">
+  <!-- Status Bar -->
+  <div class="status-bar text-gray-700">
+    <span>17:28</span>
+    <div class="flex items-center gap-1">
+      <i class="fas fa-signal text-xs"></i>
+      <i class="fas fa-wifi text-xs"></i>
+      <i class="fas fa-battery-full text-xs"></i>
+    </div>
+  </div>
+
+  <!-- Alert Modal -->
+  <div class="absolute inset-0 flex items-center justify-center px-5" style="background: rgba(0,0,0,0.4); backdrop-filter: blur(8px);">
+    <div class="bg-white/90 backdrop-blur-xl rounded-2xl p-3 w-full max-w-sm shadow-2xl relative">
+      <!-- Close Button - Top Right -->
+      <button class="absolute top-2.5 right-2.5 w-7 h-7 bg-gray-200/80 rounded-full flex items-center justify-center">
+        <i class="fas fa-times text-gray-600 text-xs"></i>
+      </button>
+
+      <!-- Alert Header -->
+      <div class="flex items-start gap-2 mb-2 pr-6">
+        <div class="w-9 h-9 bg-amber-100 rounded-full flex items-center justify-center flex-shrink-0">
+          <i class="fas fa-exclamation-triangle text-amber-500 text-sm"></i>
+        </div>
+        <div class="flex-1">
+          <h2 class="text-sm font-bold text-gray-800 mb-0.5">环境预警</h2>
+          <p class="text-gray-600 text-xs">即将到达 <span class="font-bold text-amber-600">5:30 下课潮</span>，预计本区域噪音将大幅上升</p>
+        </div>
+      </div>
+
+      <!-- Time & Prediction -->
+      <div class="bg-amber-50/80 rounded-xl p-2 mb-2">
+        <div class="flex items-center justify-between mb-1">
+          <div class="flex items-center gap-1">
+            <i class="fas fa-clock text-amber-600 text-xs"></i>
+            <span class="text-gray-800 font-semibold text-xs">预测时间</span>
+          </div>
+          <span class="text-amber-600 font-bold text-xs">17:30</span>
+        </div>
+        <div class="flex items-center gap-1">
+          <i class="fas fa-chart-line text-amber-600 text-xs"></i>
+          <span class="text-gray-600 text-xs">基于历史数据，预计噪音将从 35dB 上升至 65dB+</span>
+        </div>
+      </div>
+
+      <!-- Nearby Quiet Recommendations -->
+      <div class="mb-2">
+        <div class="flex items-center gap-1 mb-1.5">
+          <i class="fas fa-map-marker-alt text-blue-500 text-xs"></i>
+          <h3 class="text-gray-800 font-semibold text-xs">附近静谧推荐</h3>
+        </div>
+        
+        <div class="space-y-1.5">
+          <!-- Recommendation 1 -->
+          <div class="bg-white/60 backdrop-blur rounded-lg p-1.5 border border-gray-200/50">
+            <div class="flex items-start gap-1.5">
+              <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=100&q=80" class="w-10 h-10 rounded-lg object-cover flex-shrink-0">
+              <div class="flex-1 min-w-0">
+                <div class="flex items-center gap-1 mb-0.5">
+                  <p class="text-gray-800 font-semibold text-xs">静读空间</p>
+                  <span class="bg-green-100 text-green-600 text-xs px-1 py-0.5 rounded">推荐</span>
+                </div>
+                <p class="text-gray-500 text-xs mb-0.5">图书馆3楼 · 200米</p>
+                <div class="flex items-center gap-1 flex-wrap">
+                  <span class="bg-green-100 text-green-600 text-xs px-1 py-0.5 rounded">28dB 极静</span>
+                  <span class="bg-blue-100 text-blue-600 text-xs px-1 py-0.5 rounded">插座充足</span>
+                </div>
+              </div>
+              <button class="bg-amber-500 text-white text-xs px-2 py-1 rounded-lg font-medium flex-shrink-0">
+                前往
+              </button>
+            </div>
+          </div>
+
+          <!-- Recommendation 2 -->
+          <div class="bg-white/60 backdrop-blur rounded-lg p-1.5 border border-gray-200/50">
+            <div class="flex items-start gap-1.5">
+              <img src="https://images.unsplash.com/photo-1559925393-8be0ec4767c8?w=100&q=80" class="w-10 h-10 rounded-lg object-cover flex-shrink-0">
+              <div class="flex-1 min-w-0">
+                <p class="text-gray-800 font-semibold text-xs mb-0.5">禅意茶室</p>
+                <p class="text-gray-500 text-xs mb-0.5">文创园区 · 350米</p>
+                <div class="flex items-center gap-1 flex-wrap">
+                  <span class="bg-green-100 text-green-600 text-xs px-1 py-0.5 rounded">32dB 安静</span>
+                  <span class="bg-amber-100 text-amber-600 text-xs px-1 py-0.5 rounded">靠窗</span>
+                </div>
+              </div>
+              <button class="bg-amber-500 text-white text-xs px-2 py-1 rounded-lg font-medium flex-shrink-0">
+                前往
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Action Buttons -->
+      <div class="flex gap-1.5">
+        <button class="flex-1 bg-gray-200 text-gray-700 font-medium py-2 rounded-xl text-xs">
+          继续留在这里
+        </button>
+        <button class="flex-1 bg-gradient-to-r from-amber-500 to-amber-600 text-white font-semibold py-2 rounded-xl text-xs shadow-lg">
+          查看全部推荐
+        </button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+
